@@ -1,0 +1,31 @@
+<nav class="fixed top-0 w-full z-50 bg-gray-700 text-white shadow-md flex items-center justify-between px-6 py-3">
+    <div class="flex items-center">
+        <lucide-icon [name]="MessageCircleCode" class="text-blue-300" size="32"></lucide-icon>
+    </div>
+
+    <!-- Menu lateral responsivo -->
+    <div class="not-md:fixed not-md:top-0 not-md:right-0 not-md:h-full not-md:w-60 bg-gray-700 shadow-lg 
+                transition-transform duration-300 ease-in-out"
+         [ngClass]="{'not-md:translate-x-full': !menuIsOpen, 'not-md:translate-x-0': menuIsOpen}">
+        <ul class="flex gap-6 not-md:flex-col not-md:items-center not-md:pt-16">
+            @for (item of Navigation; track $index) {
+                <li class="mt-2">
+                    <a (click)="toggleMenu()" [routerLink]="item.link" class="hover:text-blue-400 transition">
+                        {{ item.name }}
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Botões à direita -->
+    <div class="flex items-center gap-4">
+        <button (click)="toggleTheme()" class="hover:scale-110 transition">
+            <lucide-icon [hidden]="isDarkMode" [name]="Moon" class="my-icon" size="28"></lucide-icon>
+            <lucide-icon [hidden]="!isDarkMode" [name]="Sun" class="my-icon" size="28"></lucide-icon>
+        </button>
+        <button (click)="toggleMenu()" class="md:hidden">
+            <lucide-icon [name]="Menu" class="text-white" size="28"></lucide-icon>
+        </button>
+    </div>
+</nav>
