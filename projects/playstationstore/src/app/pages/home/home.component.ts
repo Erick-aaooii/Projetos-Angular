@@ -40,6 +40,16 @@ export class HomeComponent {
       name: "NBA 2K25 Edição Tournament",
       img: "https://image.api.playstation.com/pr/bam-art/194/344/6ce75216-5528-4ce4-be70-61829a547426.jpg?w=440&thumb=false",
       link: ""
+    },
+    {
+      name: "Call of Duty®",
+      img: "https://image.api.playstation.com/vulcan/ap/rnd/202501/2502/d47cf917430169caffbc369bd8205a3f328aeef6f2505976.png?w=440&thumb=false",
+      link: ""
+    },
+    {
+      name: "Fortnite",
+      img: "https://image.api.playstation.com/vulcan/ap/rnd/202502/1417/aae4af6a4b9105f64b31bfc176f3e492f8692b204b508865.png?w=440&thumb=false",
+      link: ""
     }
   ]
 
@@ -57,6 +67,11 @@ export class HomeComponent {
     {
       name: "Sid Meier's Civilization® VII",
       img: "https://image.api.playstation.com/vulcan/ap/rnd/202408/1517/1a39449a9764397e1b35788ae248a672e20880c43e78182c.png?w=230&thumb=false",
+      link: ""
+    },
+    {
+      name: "Sniper Elite: Resistance",
+      img: "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png?w=440&thumb=false",
       link: ""
     }
   ]

@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-center gap-x-5 mt-10 mb-10 overflow-hidden">
-    <h2 class="font-light text-4xl text-black ml-2">{{title}}</h2>
+    <h2 class="font-light text-4xl text-white ml-2"><b>{{title}}</b></h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-4">
       @for (card of cards; track $index) {
         <a [routerLink]="card.link" class="flex flex-col justify-between rounded-xltransform transition-transform">
@@ -7,7 +7,7 @@
             <img [src]="card.img" alt="{{card.name}}" class="w-full object-cover rounded-xl transition-all hover:border-2 hover:border-blue-600">
           </div>
           <div class="flex justify-center">
-            <p class="text-lg font-semibold text-gray-800">{{ card.name }}</p>
+            <p class="text-lg font-semibold text-gray-400">{{ card.name }}</p>
           </div>
         </a>
       }
