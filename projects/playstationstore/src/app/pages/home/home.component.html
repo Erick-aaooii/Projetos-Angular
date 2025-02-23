@@ -1,0 +1,21 @@
+<section>
+    <!-- Card Inicial -->
+    <app-bigcard
+    title="Os Maiores Sucessos"
+    description="Descubra ofertas de outro mundo."
+    [img]="link"
+    button="Poupe Já"
+    ></app-bigcard>
+    
+    <!-- Mais jogados -->
+    <app-smallcard
+    title="Mais jogados"
+    [cards]="games"
+    ></app-smallcard>
+
+    <!-- Novos Jogos -->
+    <app-smallcard
+    title="Novos Jogos"
+    [cards]="games2"
+    ></app-smallcard>
+</section>

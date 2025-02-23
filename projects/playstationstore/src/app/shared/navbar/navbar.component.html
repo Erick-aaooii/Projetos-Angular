@@ -1,0 +1,39 @@
+<div class="flex flex-col">
+    <div class="w-full flex justify-end h-10 bg-black">
+        <img src="/sony.svg" alt="Sony" class=" mr-12"
+        >
+    </div>
+    <section class="flex justify-around mt-3">
+        <ul class="flex gap-x-3">
+            <img src="/Icon.png" alt="Logo" class="w-8">
+            @for (item of options; track $index) {
+                <li>
+                    <a [href]="item.link" class="text-gray-500 hover:text-blue-500">
+                        {{item.name}}
+                    </a>
+                </li>
+            }
+        </ul>
+        <ul class="flex justify-around gap-x-4">
+            <li>
+                <button class="text-white bg-blue-500 rounded-3xl px-2 text-xs hover:bg-blue-700"><b>Iniciar sessão</b></button>                
+            </li>
+            <li>
+                <button class="text-white">
+                    <lucide-icon [name]="Search" class="hover:text-gray-400"></lucide-icon>
+                </button>
+            </li>
+        </ul>
+    </section>
+    <div class="mt-2">
+        <ul class="flex justify-center gap-x-5">
+            @for (item of pags; track $index) {
+                <li class="flex items-center">
+                    <a [routerLink]="item.link" class="text-xs rounded-2xl p-1 px-3 bg-white hover:bg-gray-300" routerLinkActive="bg-black">
+                        <b>{{item.name}}</b>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
