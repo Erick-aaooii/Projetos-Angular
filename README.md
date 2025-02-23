@@ -13,6 +13,9 @@ Este repositório contém todos os meus projetos desenvolvidos com Angular, desd
 - **[Portfólio](projects/MySite/)**  
   Meu portfólio pessoal, com informações sobre meus projetos, habilidades e experiência. Totalmente responsivo e construído com Angular.
 
+- **[PlayStation Store](projects/playstationstore/)**
+   Uma releitura de como seria feito por mim a página da PlayStation.
+
 ## Tecnologias Utilizadas
 
 - **Angular**: Framework para desenvolvimento de aplicações web dinâmicas.
