@@ -1,0 +1,28 @@
+<section class="flex justify-center items-center transition-colors">
+    <form (ngSubmit)="EnviarFormulario()" 
+          class="bg-gray-300 dark:bg-gray-800 p-6 rounded-2xl shadow-lg w-80 flex flex-col gap-4 transition-colors">
+        
+        <h2 class="text-gray-900 dark:text-white text-2xl font-semibold text-center">Login</h2>
+
+        <div class="flex flex-col">
+            <label for="user" class="text-gray-700 dark:text-gray-300">Usuário:</label>
+            <input id="user" type="text" [(ngModel)]="user" name="user" 
+                   class="p-2 mt-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white 
+                          focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors" 
+                   required />
+        </div>
+
+        <div class="flex flex-col">
+            <label for="password" class="text-gray-700 dark:text-gray-300">Senha:</label>
+            <input id="password" type="password" [(ngModel)]="password" name="password" 
+                   class="p-2 mt-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white 
+                          focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors" 
+                   required />
+        </div>
+
+        <button type="submit" 
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold p-2 rounded transition">
+            Entrar
+        </button>
+    </form>
+</section>

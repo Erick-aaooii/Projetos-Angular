@@ -1,0 +1,8 @@
+<section class="flex flex-col justify-center w-full">
+  <app-itsform (filterChanged)="onFilterChanged($event)"></app-itsform>
+  <div class="grid grid-cols-2 md:grid-cols-4">
+    @for (item of filteredOptions; track $index) {
+      <app-card [name]="item.name" [link]="item.link" [description]="item.description"></app-card>
+    }
+  </div>
+</section>
